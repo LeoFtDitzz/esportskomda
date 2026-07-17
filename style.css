@@ -792,6 +792,50 @@ footer{
 
 }
 
+.join-btn{
+
+    display:inline-block;
+
+    margin-top:10px;
+
+    font-family:Anton,sans-serif;
+
+    font-size:82px;
+
+    text-decoration:none;
+
+    letter-spacing:2px;
+
+    background:linear-gradient(
+        to bottom,
+        #ffffff,
+        #e8e8e8,
+        #bdbdbd
+    );
+
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+
+    text-shadow:
+        0 0 20px rgba(158,220,255,.35),
+        0 0 45px rgba(158,220,255,.18);
+
+    transition:.25s;
+
+    cursor:pointer;
+
+}
+
+.join-btn:hover{
+
+    transform:scale(1.05);
+
+    text-shadow:
+        0 0 30px rgba(158,220,255,.6),
+        0 0 60px rgba(158,220,255,.3);
+
+}
+
 /* =====================================
        FLOATING PARTICLES
 ===================================== */
