@@ -1542,6 +1542,170 @@ body{
     box-shadow:none;
 
 }
+/* =======================================
+   MOBILE RESPONSIVE
+======================================= */
+
+@media (max-width: 768px){
+
+    body{
+        padding:0;
+        background:#050608;
+    }
+
+    .poster{
+
+        width:100%;
+        min-height:100vh;
+        height:auto;
+
+        border-radius:0;
+
+        padding-bottom:40px;
+
+    }
+
+    header{
+
+        padding:20px;
+
+    }
+
+    .logo-box{
+
+        width:60px;
+        height:60px;
+        font-size:12px;
+
+    }
+
+    .title-small{
+
+        font-size:18px;
+        letter-spacing:5px;
+
+    }
+
+    .background-title{
+
+        font-size:72px;
+
+        top:75px;
+
+        width:100%;
+
+        text-align:center;
+
+    }
+
+    .hero{
+
+        margin-top:60px;
+
+    }
+
+    .hero-frame{
+
+        width:90%;
+        height:220px;
+
+    }
+
+    .hero-placeholder{
+
+        font-size:18px;
+
+    }
+
+    .main-text{
+
+        margin-top:25px;
+
+        padding:0 20px;
+
+    }
+
+    .main-text h2{
+
+        font-size:20px;
+
+        letter-spacing:1px;
+
+    }
+
+    .main-text h3{
+
+        font-size:48px;
+
+    }
+
+    .achievement{
+
+        margin-top:35px;
+
+    }
+
+    .glass-panel{
+
+        width:92%;
+
+        height:auto;
+
+        padding:20px;
+
+    }
+
+    .gallery{
+
+        grid-template-columns:repeat(2,1fr);
+
+        gap:20px;
+
+        justify-items:center;
+
+    }
+
+    .photo{
+
+        width:120px;
+
+        height:155px;
+
+    }
+
+    .lines{
+
+        display:none;
+
+    }
+
+    footer{
+
+        position:relative;
+
+        bottom:auto;
+
+        margin-top:30px;
+
+    }
+
+    .contact{
+
+        width:90%;
+
+        height:auto;
+
+        padding:15px;
+
+        flex-direction:column;
+
+        gap:12px;
+
+        border-radius:20px;
+
+    }
+
+}
 
 }
 
