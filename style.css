@@ -1,0 +1,1549 @@
+/* ===========================
+   RESET
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+:root{
+
+    --white:#ffffff;
+    --silver:#d8d8d8;
+    --gray:#9fa4af;
+    --dark:#080b12;
+    --dark2:#111827;
+
+    --glow:#9EDCFF;
+    --glow2:#7EC9FF;
+
+}
+
+body{
+
+    background:#050608;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    min-height:100vh;
+
+    font-family:'League Spartan',sans-serif;
+
+    padding:40px;
+
+}
+
+
+/* ===========================
+      POSTER
+=========================== */
+
+.poster{
+
+    position:relative;
+
+    width:794px;
+    height:1400px;
+
+    overflow:hidden;
+
+    border-radius:28px;
+
+    background:
+    radial-gradient(circle at top,#2f4f6b 0%,transparent 40%),
+    radial-gradient(circle at bottom,#1a2940 0%,transparent 45%),
+    linear-gradient(180deg,#10131b,#07090f);
+
+    box-shadow:
+
+    0 0 70px rgba(120,200,255,.25),
+
+    0 40px 100px rgba(0,0,0,.7);
+
+}
+
+
+/* ===========================
+      GRID
+=========================== */
+
+.grid{
+
+    position:absolute;
+    inset:0;
+
+    background-image:
+
+    linear-gradient(rgba(255,255,255,.03) 1px,transparent 1px),
+
+    linear-gradient(90deg,rgba(255,255,255,.03) 1px,transparent 1px);
+
+    background-size:45px 45px;
+
+    opacity:.45;
+
+}
+
+
+/* ===========================
+      PARTICLE
+=========================== */
+
+.particles{
+
+    position:absolute;
+
+    inset:0;
+
+    background-image:
+
+    radial-gradient(circle,#fff 1px,transparent 2px);
+
+    background-size:130px 130px;
+
+    opacity:.18;
+
+}
+
+
+/* ===========================
+      LIGHT
+=========================== */
+
+.light{
+
+    position:absolute;
+
+    border-radius:50%;
+
+    filter:blur(100px);
+
+}
+
+.light1{
+
+    width:420px;
+    height:420px;
+
+    background:#8bd4ff;
+
+    top:-120px;
+    left:-100px;
+
+    opacity:.28;
+
+}
+
+.light2{
+
+    width:320px;
+    height:320px;
+
+    background:#7ebdff;
+
+    right:-120px;
+    bottom:120px;
+
+    opacity:.18;
+
+}
+
+
+/* ===========================
+      SMOKE
+=========================== */
+
+.smoke{
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+
+    radial-gradient(circle at 20% 40%,
+    rgba(255,255,255,.05),
+    transparent 30%),
+
+    radial-gradient(circle at 80% 20%,
+    rgba(255,255,255,.04),
+    transparent 35%),
+
+    radial-gradient(circle at 60% 90%,
+    rgba(255,255,255,.03),
+    transparent 40%);
+
+}
+
+
+/* ===========================
+      HEADER
+=========================== */
+
+header{
+
+    width:100%;
+
+    padding:38px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    position:relative;
+
+    z-index:10;
+
+}
+
+.logo-box{
+
+    width:82px;
+    height:82px;
+
+    border-radius:18px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    color:white;
+
+    font-weight:700;
+
+    backdrop-filter:blur(18px);
+
+    background:rgba(255,255,255,.06);
+
+    border:1px solid rgba(255,255,255,.2);
+
+    box-shadow:
+
+    0 0 25px rgba(158,220,255,.15);
+
+}
+
+
+/* ===========================
+      OPEN
+=========================== */
+
+.title-small{
+
+    position:absolute;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    font-family:Anton,sans-serif;
+
+    letter-spacing:10px;
+
+    color:white;
+
+    font-size:28px;
+
+}
+
+
+/* ===========================
+ BACKGROUND TYPOGRAPHY
+=========================== */
+
+.background-title{
+
+    position:absolute;
+
+    top:95px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    font-family:Anton;
+
+    font-size:150px;
+
+    color:white;
+
+    opacity:.05;
+
+    letter-spacing:4px;
+
+    white-space:nowrap;
+
+    z-index:1;
+
+}
+
+
+/* ===========================
+ HERO
+=========================== */
+
+.hero{
+
+    margin-top:30px;
+
+    display:flex;
+
+    justify-content:center;
+
+    position:relative;
+
+    z-index:5;
+
+}
+
+.hero-frame{
+
+    width:560px;
+
+    height:320px;
+
+    border-radius:28px;
+
+    background:
+
+    rgba(255,255,255,.05);
+
+    border:
+
+    2px solid rgba(255,255,255,.15);
+
+    backdrop-filter:blur(20px);
+
+    box-shadow:
+
+    inset 0 0 40px rgba(255,255,255,.03),
+
+    0 0 40px rgba(158,220,255,.15);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    position:relative;
+
+}
+
+.hero-frame::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:12px;
+
+    border-radius:20px;
+
+    border:1px dashed rgba(255,255,255,.15);
+
+}
+
+.hero-placeholder{
+
+    color:#bcd8ea;
+
+    font-weight:700;
+
+    letter-spacing:5px;
+
+    font-size:26px;
+
+}
+
+
+/* ===========================
+ MAIN TEXT
+=========================== */
+
+.main-text{
+
+    margin-top:35px;
+
+    text-align:center;
+
+    position:relative;
+
+    z-index:10;
+
+}
+
+.main-text h2{
+
+    font-size:34px;
+
+    color:#fff;
+
+    font-weight:700;
+
+    letter-spacing:3px;
+
+}
+
+.main-text h3{
+
+    margin-top:10px;
+
+    font-family:Anton;
+
+    font-size:82px;
+
+    letter-spacing:2px;
+
+    color:white;
+
+    background:linear-gradient(
+        to bottom,
+        #ffffff,
+        #e8e8e8,
+        #bdbdbd
+    );
+
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+
+    text-shadow:
+
+    0 0 20px rgba(158,220,255,.35),
+
+    0 0 45px rgba(158,220,255,.18);
+
+}
+
+/* ===========================
+      ACHIEVEMENT SECTION
+=========================== */
+
+.achievement{
+    margin-top:55px;
+    display:flex;
+    justify-content:center;
+    position:relative;
+    z-index:10;
+}
+
+.glass-panel{
+
+    width:690px;
+    min-height:410px;
+
+    border-radius:28px;
+
+    background:rgba(255,255,255,.06);
+
+    backdrop-filter:blur(22px);
+
+    border:1px solid rgba(255,255,255,.12);
+
+    box-shadow:
+        inset 0 1px 0 rgba(255,255,255,.12),
+        0 20px 60px rgba(0,0,0,.45),
+        0 0 35px rgba(158,220,255,.10);
+
+    padding:38px;
+
+    position:relative;
+
+    overflow:hidden;
+}
+
+.glass-panel::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+    linear-gradient(
+        120deg,
+        transparent 10%,
+        rgba(255,255,255,.08) 45%,
+        transparent 80%
+    );
+
+    pointer-events:none;
+
+}
+
+
+/* ===========================
+        GALLERY
+=========================== */
+
+.gallery{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:26px;
+
+    position:relative;
+
+    z-index:5;
+
+}
+
+
+/* ===========================
+      POLAROID
+=========================== */
+
+.photo{
+
+    width:130px;
+    height:165px;
+
+    background:white;
+
+    border-radius:6px;
+
+    padding:10px;
+
+    position:relative;
+
+    display:flex;
+
+    justify-content:center;
+    align-items:center;
+
+    color:#9ca3af;
+
+    font-weight:700;
+
+    font-size:14px;
+
+    box-shadow:
+        0 10px 20px rgba(0,0,0,.28),
+        0 0 15px rgba(158,220,255,.10);
+
+    transition:.35s;
+
+}
+
+.photo:hover{
+
+    transform:scale(1.05) rotate(0deg);
+
+    box-shadow:
+        0 25px 40px rgba(0,0,0,.45),
+        0 0 35px rgba(158,220,255,.30);
+
+}
+
+.photo span{
+
+    width:100%;
+    height:100%;
+
+    border:2px dashed #d1d5db;
+
+    display:flex;
+
+    justify-content:center;
+    align-items:center;
+
+}
+
+
+/* ===========================
+      RANDOM ROTATION
+=========================== */
+
+.p1{transform:rotate(-6deg);}
+.p2{transform:rotate(4deg);}
+.p3{transform:rotate(-3deg);}
+.p4{transform:rotate(5deg);}
+.p5{transform:rotate(5deg);}
+.p6{transform:rotate(-5deg);}
+.p7{transform:rotate(2deg);}
+.p8{transform:rotate(-4deg);}
+
+
+/* ===========================
+         MASKING TAPE
+=========================== */
+
+.tape{
+
+    width:58px;
+    height:18px;
+
+    background:rgba(255,255,255,.45);
+
+    backdrop-filter:blur(3px);
+
+    position:absolute;
+
+    top:-8px;
+
+    left:50%;
+
+    transform:translateX(-50%) rotate(-6deg);
+
+    border-radius:3px;
+
+    border:1px solid rgba(255,255,255,.25);
+
+    opacity:.92;
+
+}
+
+
+/* ===========================
+          PUSH PIN
+=========================== */
+
+.pin{
+
+    width:14px;
+    height:14px;
+
+    border-radius:50%;
+
+    background:#9EDCFF;
+
+    position:absolute;
+
+    top:-16px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    box-shadow:
+        0 0 15px rgba(158,220,255,.75);
+
+}
+
+.pin::after{
+
+    content:"";
+
+    width:3px;
+    height:14px;
+
+    background:#d9d9d9;
+
+    position:absolute;
+
+    top:12px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+}
+
+
+/* ===========================
+     SVG CONNECTION LINE
+=========================== */
+
+.lines{
+
+    position:absolute;
+
+    inset:0;
+
+    width:100%;
+    height:100%;
+
+    pointer-events:none;
+
+    z-index:2;
+
+}
+
+.lines line{
+
+    stroke:rgba(158,220,255,.18);
+
+    stroke-width:2;
+
+    stroke-linecap:round;
+
+    stroke-dasharray:8 8;
+
+}
+
+
+/* ===========================
+      FOOTER
+=========================== */
+
+footer{
+
+    position:absolute;
+
+    bottom:35px;
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:center;
+
+    z-index:20;
+
+}
+
+.contact{
+
+    width:680px;
+
+    height:62px;
+
+    background:white;
+
+    border-radius:40px;
+
+    display:flex;
+
+    justify-content:space-evenly;
+
+    align-items:center;
+
+    box-shadow:
+        0 10px 35px rgba(0,0,0,.35);
+
+}
+
+.contact .item{
+
+    font-weight:700;
+
+    color:#111827;
+
+    font-size:18px;
+
+}
+
+/* =====================================================
+   PREMIUM EFFECTS
+===================================================== */
+
+/* Hero Border Glow */
+
+.hero-frame{
+
+    animation:heroGlow 5s ease-in-out infinite;
+
+}
+
+@keyframes heroGlow{
+
+    0%,100%{
+
+        box-shadow:
+        inset 0 0 30px rgba(255,255,255,.03),
+        0 0 20px rgba(158,220,255,.18),
+        0 0 45px rgba(158,220,255,.08);
+
+    }
+
+    50%{
+
+        box-shadow:
+        inset 0 0 40px rgba(255,255,255,.08),
+        0 0 40px rgba(158,220,255,.45),
+        0 0 80px rgba(158,220,255,.20);
+
+    }
+
+}
+
+
+/* =====================================
+    HERO LIGHT SWEEP
+===================================== */
+
+.hero-frame::after{
+
+    content:"";
+
+    position:absolute;
+
+    top:-120px;
+    left:-200px;
+
+    width:180px;
+    height:600px;
+
+    transform:rotate(25deg);
+
+    background:
+
+    linear-gradient(
+
+        to right,
+
+        transparent,
+
+        rgba(255,255,255,.35),
+
+        transparent
+
+    );
+
+    filter:blur(18px);
+
+    animation:lightSweep 7s infinite;
+
+}
+
+@keyframes lightSweep{
+
+    0%{
+
+        left:-250px;
+
+    }
+
+    100%{
+
+        left:800px;
+
+    }
+
+}
+
+
+/* =====================================
+      CHROME TITLE
+===================================== */
+
+.main-text h3{
+
+    position:relative;
+
+}
+
+.main-text h3::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+
+    linear-gradient(
+
+        90deg,
+
+        transparent,
+
+        rgba(255,255,255,.8),
+
+        transparent
+
+    );
+
+    mix-blend-mode:screen;
+
+    animation:chromeMove 5s linear infinite;
+
+}
+
+@keyframes chromeMove{
+
+    from{
+
+        transform:translateX(-120%);
+
+    }
+
+    to{
+
+        transform:translateX(120%);
+
+    }
+
+}
+
+
+/* =====================================
+       FLOATING PARTICLES
+===================================== */
+
+.particles::before,
+.particles::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background-image:
+
+    radial-gradient(circle,#9EDCFF 2px,transparent 3px);
+
+    background-size:180px 180px;
+
+    opacity:.15;
+
+}
+
+.particles::before{
+
+    animation:particle1 18s linear infinite;
+
+}
+
+.particles::after{
+
+    animation:particle2 24s linear infinite reverse;
+
+}
+
+@keyframes particle1{
+
+    from{
+
+        transform:translateY(0);
+
+    }
+
+    to{
+
+        transform:translateY(-200px);
+
+    }
+
+}
+
+@keyframes particle2{
+
+    from{
+
+        transform:translateX(0);
+
+    }
+
+    to{
+
+        transform:translateX(150px);
+
+    }
+
+}
+
+
+/* =====================================
+      PHOTO HOVER
+===================================== */
+
+.photo{
+
+    overflow:hidden;
+
+}
+
+.photo::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:-120%;
+
+    left:-50%;
+
+    width:80%;
+
+    height:250%;
+
+    transform:rotate(25deg);
+
+    background:
+
+    linear-gradient(
+
+        transparent,
+
+        rgba(255,255,255,.45),
+
+        transparent
+
+    );
+
+    transition:.6s;
+
+}
+
+.photo:hover::before{
+
+    top:100%;
+
+}
+
+
+/* =====================================
+       PIN GLOW
+===================================== */
+
+.pin{
+
+    animation:pinPulse 2s infinite;
+
+}
+
+@keyframes pinPulse{
+
+    0%{
+
+        box-shadow:
+
+        0 0 8px #9EDCFF;
+
+    }
+
+    50%{
+
+        box-shadow:
+
+        0 0 25px #9EDCFF,
+
+        0 0 40px #9EDCFF;
+
+    }
+
+    100%{
+
+        box-shadow:
+
+        0 0 8px #9EDCFF;
+
+    }
+
+}
+
+
+/* =====================================
+      GLASS SHINE
+===================================== */
+
+.glass-panel{
+
+    position:relative;
+
+}
+
+.glass-panel::after{
+
+    content:"";
+
+    position:absolute;
+
+    top:-180px;
+
+    left:-200px;
+
+    width:220px;
+
+    height:800px;
+
+    transform:rotate(30deg);
+
+    background:
+
+    linear-gradient(
+
+        transparent,
+
+        rgba(255,255,255,.18),
+
+        transparent
+
+    );
+
+    filter:blur(10px);
+
+    animation:glassSweep 10s infinite;
+
+}
+
+@keyframes glassSweep{
+
+    from{
+
+        left:-250px;
+
+    }
+
+    to{
+
+        left:900px;
+
+    }
+
+}
+
+
+/* =====================================
+        BACKGROUND LIGHT
+===================================== */
+
+.light{
+
+    animation:ambientLight 8s ease-in-out infinite;
+
+}
+
+@keyframes ambientLight{
+
+    0%{
+
+        transform:scale(1);
+
+    }
+
+    50%{
+
+        transform:scale(1.25);
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+    }
+
+}
+
+
+/* =====================================
+      NOISE OVERLAY
+===================================== */
+
+.poster::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background-image:
+
+    radial-gradient(circle,rgba(255,255,255,.025) 1px,transparent 1px);
+
+    background-size:5px 5px;
+
+    mix-blend-mode:soft-light;
+
+    pointer-events:none;
+
+}
+
+
+/* =====================================
+     CONTACT HOVER
+===================================== */
+
+.contact{
+
+    transition:.35s;
+
+}
+
+.contact:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:
+
+    0 15px 45px rgba(0,0,0,.45),
+
+    0 0 20px rgba(158,220,255,.25);
+
+}
+
+
+/* =====================================
+      SMOOTH ANIMATION
+===================================== */
+
+.photo,
+.hero-frame,
+.contact,
+.logo-box{
+
+    transition:.35s ease;
+
+}
+
+.logo-box:hover{
+
+    transform:rotate(-5deg) scale(1.05);
+
+    box-shadow:
+
+    0 0 35px rgba(158,220,255,.45);
+
+}
+
+/* =====================================================
+   RESPONSIVE & FINAL POLISH
+===================================================== */
+
+/* ========= Hero Image ========= */
+
+.hero-placeholder{
+
+    width:100%;
+    height:100%;
+
+    border-radius:20px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    overflow:hidden;
+
+    background:
+    linear-gradient(
+        135deg,
+        rgba(255,255,255,.04),
+        rgba(255,255,255,.01)
+    );
+
+    color:#d9e7f5;
+    font-size:22px;
+    letter-spacing:4px;
+    text-transform:uppercase;
+
+}
+
+.hero-placeholder img{
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+}
+
+
+/* ========= Photo Placeholder ========= */
+
+.photo{
+
+    overflow:hidden;
+}
+
+.photo img{
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+}
+
+
+/* ========= HUD Corner ========= */
+
+.poster::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:25px;
+
+    border:1px solid rgba(255,255,255,.05);
+
+    border-radius:24px;
+
+    pointer-events:none;
+
+}
+
+.poster .corner{
+
+    position:absolute;
+
+    width:50px;
+    height:50px;
+
+    border:2px solid rgba(158,220,255,.5);
+
+}
+
+.corner.tl{
+    top:20px;
+    left:20px;
+    border-right:none;
+    border-bottom:none;
+}
+
+.corner.tr{
+    top:20px;
+    right:20px;
+    border-left:none;
+    border-bottom:none;
+}
+
+.corner.bl{
+    bottom:20px;
+    left:20px;
+    border-right:none;
+    border-top:none;
+}
+
+.corner.br{
+    bottom:20px;
+    right:20px;
+    border-left:none;
+    border-top:none;
+}
+
+
+/* ========= Gradient Border ========= */
+
+.poster{
+
+    outline:2px solid rgba(255,255,255,.08);
+
+}
+
+.poster::selection{
+
+    background:#9EDCFF;
+    color:black;
+
+}
+
+
+/* ========= Footer ========= */
+
+.contact{
+
+    backdrop-filter:blur(15px);
+
+    border:1px solid rgba(255,255,255,.15);
+
+}
+
+.contact .item{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    transition:.3s;
+
+}
+
+.contact .item:hover{
+
+    color:#2a6bff;
+
+}
+
+
+/* ========= Logo ========= */
+
+.logo-box img{
+
+    width:100%;
+    height:100%;
+
+    object-fit:contain;
+
+}
+
+
+/* ========= Neon Divider ========= */
+
+.main-text::after{
+
+    content:"";
+
+    display:block;
+
+    width:220px;
+    height:3px;
+
+    margin:25px auto;
+
+    border-radius:100px;
+
+    background:
+    linear-gradient(
+        90deg,
+        transparent,
+        #9EDCFF,
+        transparent
+    );
+
+    box-shadow:
+
+    0 0 18px #9EDCFF;
+
+}
+
+
+/* ========= Glass Blur ========= */
+
+.glass-panel{
+
+    backdrop-filter:blur(30px);
+
+}
+
+
+/* ========= Scroll ========= */
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+
+/* ========= Responsive ========= */
+
+@media(max-width:900px){
+
+.poster{
+
+    width:100vw;
+    height:auto;
+
+    border-radius:0;
+
+}
+
+header{
+
+    padding:25px;
+
+}
+
+.background-title{
+
+    font-size:95px;
+
+}
+
+.hero-frame{
+
+    width:90%;
+    height:240px;
+
+}
+
+.main-text h2{
+
+    font-size:22px;
+
+}
+
+.main-text h3{
+
+    font-size:55px;
+
+}
+
+.glass-panel{
+
+    width:92%;
+
+    padding:22px;
+
+}
+
+.gallery{
+
+    grid-template-columns:repeat(2,1fr);
+
+    justify-items:center;
+
+}
+
+.photo{
+
+    width:130px;
+    height:165px;
+
+}
+
+.contact{
+
+    width:92%;
+
+    height:auto;
+
+    padding:15px;
+
+    flex-direction:column;
+
+    gap:12px;
+
+}
+
+}
+
+
+/* ========= Ultra Wide ========= */
+
+@media(min-width:1600px){
+
+.poster{
+
+    transform:scale(1.2);
+
+}
+
+}
+
+
+/* ========= Print A4 ========= */
+
+@media print{
+
+body{
+
+    background:white;
+
+    padding:0;
+
+}
+
+.poster{
+
+    width:210mm;
+    height:297mm;
+
+    border-radius:0;
+
+    box-shadow:none;
+
+}
+
+}
+
+
+/* ========= End ========= */
