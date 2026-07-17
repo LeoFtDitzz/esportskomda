@@ -781,60 +781,6 @@ footer{
 }
 
 
-/* =====================================
-    HERO LIGHT SWEEP
-===================================== */
-
-.hero-frame::after{
-
-    content:"";
-
-    position:absolute;
-
-    top:-120px;
-    left:-200px;
-
-    width:180px;
-    height:600px;
-
-    transform:rotate(25deg);
-
-    background:
-
-    linear-gradient(
-
-        to right,
-
-        transparent,
-
-        rgba(255,255,255,.35),
-
-        transparent
-
-    );
-
-    filter:blur(18px);
-
-    animation:lightSweep 7s infinite;
-
-}
-
-@keyframes lightSweep{
-
-    0%{
-
-        left:-250px;
-
-    }
-
-    100%{
-
-        left:800px;
-
-    }
-
-}
-
 
 /* =====================================
       CHROME TITLE
@@ -845,51 +791,6 @@ footer{
     position:relative;
 
 }
-
-.main-text h3::before{
-
-    content:"";
-
-    position:absolute;
-
-    inset:0;
-
-    background:
-
-    linear-gradient(
-
-        90deg,
-
-        transparent,
-
-        rgba(255,255,255,.8),
-
-        transparent
-
-    );
-
-    mix-blend-mode:screen;
-
-    animation:chromeMove 5s linear infinite;
-
-}
-
-@keyframes chromeMove{
-
-    from{
-
-        transform:translateX(-120%);
-
-    }
-
-    to{
-
-        transform:translateX(120%);
-
-    }
-
-}
-
 
 /* =====================================
        FLOATING PARTICLES
@@ -1059,55 +960,6 @@ footer{
 
 }
 
-.glass-panel::after{
-
-    content:"";
-
-    position:absolute;
-
-    top:-180px;
-
-    left:-200px;
-
-    width:220px;
-
-    height:800px;
-
-    transform:rotate(30deg);
-
-    background:
-
-    linear-gradient(
-
-        transparent,
-
-        rgba(255,255,255,.18),
-
-        transparent
-
-    );
-
-    filter:blur(10px);
-
-    animation:glassSweep 10s infinite;
-
-}
-
-@keyframes glassSweep{
-
-    from{
-
-        left:-250px;
-
-    }
-
-    to{
-
-        left:900px;
-
-    }
-
-}
 
 
 /* =====================================
