@@ -8,19 +8,6 @@
     box-sizing:border-box;
 }
 
-:root{
-
-    --white:#ffffff;
-    --silver:#d8d8d8;
-    --gray:#9fa4af;
-    --dark:#080b12;
-    --dark2:#111827;
-
-    --glow:#9EDCFF;
-    --glow2:#7EC9FF;
-
-}
-
 body{
 
     background:#050608;
